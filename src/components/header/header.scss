@@ -1,0 +1,20 @@
+
+.header-content {
+  height: 96px;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    width: 90px;
+  }
+
+  .avator {
+    img {
+      width: 60px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  }
+}

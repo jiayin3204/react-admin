@@ -1,0 +1,10 @@
+/package-lock.json
+/node_modules
+/dist
+/.vs
+/*.bat
+/.idea
+/.DS_Store
+/src/.DS_Store
+/deploy*
+/config.js
