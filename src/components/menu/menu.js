@@ -1,14 +1,11 @@
 import { Menu, Icon } from 'antd';
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './menu.scss'
 
 const { SubMenu } = Menu;
 
 class Sider extends React.Component {
-
-  constructor (props) {
-    super(props)
-  }
   // submenu keys of first level
   rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
 
@@ -26,11 +23,6 @@ class Sider extends React.Component {
       });
     }
   };
-
-  handleClickAllAtudy () {
-    console.log(this.props.history);
-    
-  }
 
   render() {
     return (
@@ -50,8 +42,12 @@ class Sider extends React.Component {
               </span>
             }
           >
-            <Menu.Item key="1" onClick={() => this.handleClickAllAtudy()}>全校学生</Menu.Item>
-            <Menu.Item key="2">班级学生</Menu.Item>
+            <Menu.Item key="1">
+              <Link to="/allStudent">全校学生</Link>
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Link to="/classStudent">班级学生</Link>
+            </Menu.Item>
             <Menu.Item key="3">一对一学生</Menu.Item>
           </SubMenu>
           <SubMenu

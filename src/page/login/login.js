@@ -10,7 +10,7 @@ export default class Home extends React.Component {
   }
 
   handleGoLogin (e) {
-    this.props.history.push('home')
+    this.props.history.push('/')
   }
 
   render () {
